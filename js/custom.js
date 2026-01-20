@@ -14,17 +14,32 @@
 		$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	}
 
-	$(window).on("load", function() {
-
-		/* ----------------------------------------------------------- */
-		/*  PAGE PRELOADER
-        /* ----------------------------------------------------------- */
-		
+	// 優化：使用 DOMContentLoaded 而不是 window.load，並減少等待時間
+	$(document).ready(function() {
 		var preloader = $('#preloader');
-		setTimeout(function() {
-			preloader.addClass('preloaded');
-		}, 800);
-
+		// 確保至少顯示一小段時間以保持動畫流暢
+		var minDisplayTime = 300;
+		var startTime = Date.now();
+		
+		// 檢查關鍵資源是否已載入
+		function hidePreloader() {
+			var elapsed = Date.now() - startTime;
+			var remainingTime = Math.max(0, minDisplayTime - elapsed);
+			
+			setTimeout(function() {
+				preloader.addClass('preloaded');
+			}, remainingTime);
+		}
+		
+		// 如果 DOM 已準備好，立即開始計時
+		hidePreloader();
+		
+		// 同時監聽 window.load 作為備用（但不會等待太久）
+		$(window).on("load", function() {
+			if (!preloader.hasClass('preloaded')) {
+				hidePreloader();
+			}
+		});
 	});
 
 	$(document).ready(function() {

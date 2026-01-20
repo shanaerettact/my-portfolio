@@ -5,8 +5,9 @@
     <title>Johnny Su - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Template Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Template CSS Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/component.css" rel="stylesheet">
@@ -107,10 +108,10 @@
           <div class="container-fluid main-container container-home p-0">
             <div class="color-block d-none d-lg-block"></div>
             <div class="row home-details-container align-items-center">
-			  <img class="col-lg-4 position-fixed d-none d-lg-block" src="img/me.png" alt="">
+			  <img class="col-lg-4 position-fixed d-none d-lg-block" src="img/me.png" alt="" fetchpriority="high">
               <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
                 <div>
-                  <img src="http://via.placeholder.com/300x300.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture">
+                  <img src="img/me.png" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" fetchpriority="high">
                   <h1 class="text-uppercase poppins-font">Hi! 我是蘇朝輝. <span>一位前端工程師</span>
                   </h1>
                   <p class="open-sans-font">我擁有多年前端開發與 UI/UX 設計經驗，擅長將使用者需求轉化為具備高互動性與易用性的數位產品。我相信「設計驅動開發」，致力於打造既美觀又實用的產品體驗，提升用戶滿意度與產品價值。</p>
@@ -146,7 +147,7 @@
                       <h3 class="text-uppercase custom-title mb-0 ft-wt-600">個人介紹</h3>
                     </div>
                     <div class="col-12 d-block d-sm-none">
-                      <img src="img/me.png" class="img-fluid main-img-mobile" alt="my picture">
+                      <img src="img/me.png" class="img-fluid main-img-mobile" alt="my picture" loading="lazy">
                     </div>
                     <div class="col-6">
                       <ul class="about-list list-unstyled open-sans-font">
@@ -403,7 +404,7 @@
                   <!-- Portfolio Item Starts -->
                   <li>
                     <figure>
-                      <img src="img/work-1.jpg" alt="Portolio Image">
+                      <img src="img/work-1.jpg" alt="Portolio Image" loading="lazy">
                       <div>
                         <span>王品集團官網</span>
                       </div>
@@ -413,7 +414,7 @@
                   <!-- Portfolio Item Starts -->
                   <li>
                     <figure>
-                      <img src="img/work-2.jpg" alt="Portolio Image">
+                      <img src="img/work-2.jpg" alt="Portolio Image" loading="lazy">
                       <div>
                         <span>王品瘋美食官網</span>
                       </div>
@@ -423,7 +424,7 @@
                   <!-- Portfolio Item Starts -->
                   <li>
                     <figure>
-                      <img src="img/work-3.jpg" alt="Portolio Image">
+                      <img src="img/work-3.jpg" alt="Portolio Image" loading="lazy">
                       <div>
                         <span>王品旗下品牌各官網</span>
                       </div>
@@ -433,7 +434,7 @@
                   <!-- Portfolio Item Starts -->
                   <li>
                     <figure>
-                      <img src="img/work-4.jpg" alt="Portolio Image">
+                      <img src="img/work-4.jpg" alt="Portolio Image" loading="lazy">
                       <div>
                         <span>蔡記油飯官網</span>
                       </div>
@@ -443,7 +444,7 @@
                   <!-- Portfolio Item Starts -->
                   <li>
                     <figure>
-                      <img src="img/work-5.jpg" alt="Portolio Image">
+                      <img src="img/work-5.jpg" alt="Portolio Image" loading="lazy">
                       <div>
                         <span>多租戶LineBot專案</span>
                       </div>
@@ -453,7 +454,7 @@
                   <!-- Portfolio Item Starts -->
                   <li>
                     <figure>
-                      <img src="img/work-6.jpg" alt="Portolio Image">
+                      <img src="img/work-6.jpg" alt="Portolio Image" loading="lazy">
                       <div>
                         <span>UI/UI專案</span>
                       </div>
@@ -487,7 +488,7 @@
                       </figcaption>
                       <!-- Project Details Ends -->
                       <!-- Main Project Content Starts -->
-                      <img src="img/work-1.jpg" alt="Portolio Image">
+                      <img src="img/work-1.jpg" alt="Portolio Image" loading="lazy">
                       <!-- Main Project Content Ends -->
                     </figure>
                   </li>
@@ -513,7 +514,7 @@
                       </figcaption>
                       <!-- Project Details Ends -->
                       <!-- Main Project Content Starts -->
-                      <img src="img/work-2.jpg" alt="Portolio Image">
+                      <img src="img/work-2.jpg" alt="Portolio Image" loading="lazy">
                       <!-- Main Project Content Ends -->
                     </figure>
                   </li>
@@ -563,52 +564,52 @@
                         <!-- The slideshow -->
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="img/work-3-1.jpg" alt="slide 1">
+                            <img src="img/work-3-1.jpg" alt="slide 1" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-2.jpg" alt="slide 2">
+                            <img src="img/work-3-2.jpg" alt="slide 2" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-3.png" alt="slide 3">
+                            <img src="img/work-3-3.png" alt="slide 3" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-4.jpg" alt="slide 4">
+                            <img src="img/work-3-4.jpg" alt="slide 4" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-5.jpg" alt="slide 5">
+                            <img src="img/work-3-5.jpg" alt="slide 5" loading="lazy">
                           </div>                            
                           <div class="carousel-item">
-                            <img src="img/work-3-6.jpg" alt="slide 6">
+                            <img src="img/work-3-6.jpg" alt="slide 6" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-7.jpg" alt="slide 7">
+                            <img src="img/work-3-7.jpg" alt="slide 7" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-8.jpg" alt="slide 8">
+                            <img src="img/work-3-8.jpg" alt="slide 8" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-9.jpg" alt="slide 9">
+                            <img src="img/work-3-9.jpg" alt="slide 9" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-10.jpg" alt="slide 10">
+                            <img src="img/work-3-10.jpg" alt="slide 10" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-11.jpg" alt="slide 11">
+                            <img src="img/work-3-11.jpg" alt="slide 11" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-12.jpg" alt="slide 12">
+                            <img src="img/work-3-12.jpg" alt="slide 12" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-13.jpg" alt="slide 13">
+                            <img src="img/work-3-13.jpg" alt="slide 13" loading="lazy">
                           </div> 
                           <div class="carousel-item">
-                            <img src="img/work-3-14.jpg" alt="slide 14">
+                            <img src="img/work-3-14.jpg" alt="slide 14" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-15.jpg" alt="slide 15">
+                            <img src="img/work-3-15.jpg" alt="slide 15" loading="lazy">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/work-3-16.jpg" alt="slide 16">
+                            <img src="img/work-3-16.jpg" alt="slide 16" loading="lazy">
                           </div>                                                   
                         </div>
                       </div>
@@ -637,7 +638,7 @@
                       </figcaption>
                       <!-- Project Details Ends -->
                       <!-- Main Project Content Starts -->
-                      <img src="img/work-4.jpg" alt="Portolio Image">
+                      <img src="img/work-4.jpg" alt="Portolio Image" loading="lazy">
                       <!-- Main Project Content Ends -->
                     </figure>
                   </li>
@@ -663,7 +664,7 @@
                       </figcaption>
                       <!-- Project Details Ends -->
                       <!-- Main Project Content Starts -->
-                      <img src="img/work-5.jpg" alt="Portolio Image">
+                      <img src="img/work-5.jpg" alt="Portolio Image" loading="lazy">
                       <!-- Main Project Content Ends -->
                     </figure>
                   </li>
@@ -689,7 +690,7 @@
                       </figcaption>
                       <!-- Project Details Ends -->
                       <!-- Main Project Content Starts -->
-                      <img src="img/work-6.jpg" alt="Portolio Image">
+                      <img src="img/work-6.jpg" alt="Portolio Image" loading="lazy">
                       <!-- Main Project Content Ends -->
                     </figure>
                   </li>
@@ -723,7 +724,7 @@
                       </figcaption>
                       <!-- Project Details Ends -->
                       <!-- Main Project Content Starts -->
-                      <img src="http://via.placeholder.com/895x552.jpg" alt="Portolio Image">
+                      <!-- Placeholder removed for better performance -->
                       <!-- Main Project Content Ends -->
                     </figure>
                   </li>
@@ -731,13 +732,13 @@
                 <!-- Portfolio Navigation Starts -->
                 <nav>
                   <span class="icon nav-prev">
-                    <img src="img/projects/navigation/left-arrow.png" alt="previous">
+                    <img src="img/projects/navigation/left-arrow.png" alt="previous" loading="lazy">
                   </span>
                   <span class="icon nav-next">
-                    <img src="img/projects/navigation/right-arrow.png" alt="next">
+                    <img src="img/projects/navigation/right-arrow.png" alt="next" loading="lazy">
                   </span>
                   <span class="nav-close">
-                    <img src="img/projects/navigation/close-button.png" alt="close">
+                    <img src="img/projects/navigation/close-button.png" alt="close" loading="lazy">
                   </span>
                 </nav>
                 <!-- Portfolio Navigation Ends -->
@@ -770,7 +771,7 @@
                   <article class="post-container">
                     <div class="post-thumb">
                       <a href="https://hiskio.com/courses/135" target="_blank" class="d-block position-relative overflow-hidden">
-                        <img src="img/class-1.webp" class="img-fluid" alt="Blog Post">
+                        <img src="img/class-1.webp" class="img-fluid" alt="Blog Post" loading="lazy">
                       </a>
                     </div>
                     <div class="post-content">
@@ -791,7 +792,7 @@
                   <article class="post-container">
                     <div class="post-thumb">
                       <a href="https://hiskio.com/courses/519" target="_blank" class="d-block position-relative overflow-hidden">
-                        <img src="img/class-2.webp" class="img-fluid" alt="">
+                        <img src="img/class-2.webp" class="img-fluid" alt="" loading="lazy">
                       </a>
                     </div>
                     <div class="post-content">
@@ -812,7 +813,7 @@
                   <article class="post-container">
                     <div class="post-thumb">
                       <a href="https://hiskio.com/courses/154" target="_blank" class="d-block position-relative overflow-hidden">
-                        <img src="img/class-3.webp" class="img-fluid" alt="">
+                        <img src="img/class-3.webp" class="img-fluid" alt="" loading="lazy">
                       </a>
                     </div>
                     <div class="post-content">
