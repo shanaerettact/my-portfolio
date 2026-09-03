@@ -1,0 +1,56 @@
+Cover Letter
+
+────────────────────────────────────
+
+Johnny Su (蘇朝輝)
+Email: jflashblaze@yahoo.com.tw | Phone: 0937655402
+
+────────────────────────────────────
+
+Dear Hiring Manager,
+
+My name is Johnny Su. I am an engineer with more than 18 years of experience in
+front-end development and UI/UX design, currently working at Wowprime Group as a
+UI/UX Project Assistant Manager. I would welcome the opportunity to join your team
+and contribute what I have learned.
+
+Professional Background
+
+I work by the principle of design-driven development, turning user needs into
+digital products that are highly interactive and easy to use. From my academic
+training in Visual Communication Design and a master's in Multimedia Design through
+to years of hands-on industry work, I bring together design thinking and engineering
+execution.
+
+Career History
+
+- Wowprime Group (2024 - Present), UI/UX Project Assistant Manager: coordinate
+  cross-departmental resources and drive UI/UX projects from concept to launch
+- Yuan Cheng Technology (2018 - 2024), Front-End Engineer: build efficient, modular
+  interfaces with frameworks such as Vue.js and Angular
+- Jie Fu Information Technology (2010 - 2018), Web Designer: design website
+  interfaces that combine visual craft with user experience
+
+Technical Skills
+
+- Front-end: HTML, CSS, SCSS, JavaScript
+- Frameworks: Vue.js, Angular, Vite
+- Design: Figma, Photoshop, Illustrator
+- Other: TailwindCSS, Vibe Coding
+
+Selected Projects
+
+- Wowprime Group website and Wowprime Fun Food website: HTML / CSS / JavaScript
+- VIC Online Casino: front-end development with Vue 3 + Vite + TailwindCSS
+- Video streaming site: front-end development with Angular + TailwindCSS
+- UX/UI project: interface design in Figma
+
+I have also taught several front-end courses on the Hiskio platform, including
+"A Web Design Course for Absolute Beginners" and "Solve Common CSS Layout Problems
+Once and for All", so I bring experience in knowledge sharing and teaching as well.
+
+I would be glad to discuss how I can contribute. Thank you for your time and
+consideration.
+
+Sincerely,
+Johnny Su

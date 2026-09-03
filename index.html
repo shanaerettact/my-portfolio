@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Johnny Su - Personal Portfolio</title>
+    <title data-i18n="page.title">Johnny Su - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Template Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,8 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- CSS Skin File -->
     <link href="css/skins/yellow.css" rel="stylesheet">
+    <!-- Language Switcher CSS -->
+    <link href="css/lang-switch.css" rel="stylesheet">
     <!-- Modernizr JS File -->
     <script src="js/modernizr.min.js"></script>
   </head>
@@ -32,25 +34,25 @@
         <li class="icon-box desktop-nav-element active">
           <i class="fa fa-home"></i>
           <div>
-            <h2>Home</h2>
+            <h2 data-i18n="nav.home">Home</h2>
           </div>
         </li>
         <li class="icon-box desktop-nav-element">
           <i class="fa fa-user"></i>
           <div>
-            <h2>About</h2>
+            <h2 data-i18n="nav.about">About</h2>
           </div>
         </li>
         <li class="icon-box desktop-nav-element">
           <i class="fa fa-briefcase"></i>
           <div>
-            <h2>Portfolio</h2>
+            <h2 data-i18n="nav.portfolio">Portfolio</h2>
           </div>
         </li>
         <li class="icon-box desktop-nav-element">
           <i class="fa fa-comments"></i>
           <div>
-            <h2>Class</h2>
+            <h2 data-i18n="nav.class">Class</h2>
           </div>
         </li>
       </ul>
@@ -67,37 +69,43 @@
             <li class="mobile-nav-element home-link active">
               <div>
                 <i class="fa fa-home"></i>
-                <span>Home</span>
+                <span data-i18n="nav.home">Home</span>
               </div>
             </li>
             <li class="mobile-nav-element">
               <div>
                 <i class="fa fa-user"></i>
-                <span>About</span>
+                <span data-i18n="nav.about">About</span>
               </div>
             </li>
             <li class="mobile-nav-element">
               <div>
                 <i class="fa fa-folder-open"></i>
-                <span>Portfolio</span>
+                <span data-i18n="nav.portfolio">Portfolio</span>
               </div>
             </li>
             <li class="mobile-nav-element">
               <div>
                 <i class="fa fa-envelope-open"></i>
-                <span>Contact</span>
+                <span data-i18n="nav.contact">Contact</span>
               </div>
             </li>
             <li class="mobile-nav-element">
               <div>
                 <i class="fa fa-comments"></i>
-                <span>Class</span>
+                <span data-i18n="nav.class">Class</span>
               </div>
             </li>
           </ul>
         </div>
       </nav>
       <!-- Mobile Menu Ends -->
+      <!-- Language Switcher Starts -->
+      <div class="lang-switch" id="lang-switch" role="group" aria-label="Language / 語言">
+        <button type="button" class="lang-switch__btn" data-lang="zh" aria-label="切換為中文">中</button>
+        <button type="button" class="lang-switch__btn" data-lang="en" aria-label="Switch to English">EN</button>
+      </div>
+      <!-- Language Switcher Ends -->
     </header>
     <!-- Header Ends -->
     <!-- Main Content Starts -->
@@ -112,11 +120,11 @@
               <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
                 <div>
                   <img src="img/me.png" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" fetchpriority="high">
-                  <h1 class="text-uppercase poppins-font">Hi! 我是蘇朝輝. <span>一位前端工程師</span>
+                  <h1 class="text-uppercase poppins-font" data-i18n-html="home.greeting">Hi! 我是蘇朝輝. <span>一位前端工程師</span>
                   </h1>
-                  <p class="open-sans-font">我擁有多年前端開發與 UI/UX 設計經驗，擅長將使用者需求轉化為具備高互動性與易用性的數位產品。我相信「設計驅動開發」，致力於打造既美觀又實用的產品體驗，提升用戶滿意度與產品價值。</p>
+                  <p class="open-sans-font" data-i18n="home.intro">我擁有多年前端開發與 UI/UX 設計經驗，擅長將使用者需求轉化為具備高互動性與易用性的數位產品。我相信「設計驅動開發」，致力於打造既美觀又實用的產品體驗，提升用戶滿意度與產品價值。</p>
                   <a id="link-about" class="button">
-                    <span class="button-text">更多關於我</span>
+                    <span class="button-text" data-i18n="home.moreAbout">更多關於我</span>
                     <span class="button-icon fa fa-arrow-right"></span>
                   </a>
                 </div>
@@ -131,7 +139,7 @@
         <!-- Main Content Starts -->
         <!-- Section Title Starts -->
         <div class="title-section text-left text-sm-center">
-          <h2>ABOUT <span>ME</span>
+          <h2 data-i18n-html="about.sectionTitle">ABOUT <span>ME</span>
           </h2>
           <span class="title-bg">Resume</span>
         </div>
@@ -144,7 +152,7 @@
                 <div class="col-12 col-lg-5 col-xl-6">
                   <div class="row">
                     <div class="col-12">
-                      <h3 class="text-uppercase custom-title mb-0 ft-wt-600">個人介紹</h3>
+                      <h3 class="text-uppercase custom-title mb-0 ft-wt-600" data-i18n="about.personalInfo">個人介紹</h3>
                     </div>
                     <div class="col-12 d-block d-sm-none">
                       <img src="img/me.png" class="img-fluid main-img-mobile" alt="my picture" loading="lazy">
@@ -152,16 +160,16 @@
                     <div class="col-6">
                       <ul class="about-list list-unstyled open-sans-font">
                         <li>
-                          <span class="title">中文姓名 :</span>
-                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">蘇朝輝</span>
+                          <span class="title" data-i18n="about.label.cnName">中文姓名 :</span>
+                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block" data-i18n="about.value.cnName">蘇朝輝</span>
                         </li>
                         <li>
-                          <span class="title">英文姓名 :</span>
-                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Johnny</span>
+                          <span class="title" data-i18n="about.label.enName">英文姓名 :</span>
+                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block" data-i18n="about.value.enName">Johnny</span>
                         </li>
                         <li>
-                          <span class="title">出生年 :</span>
-                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">1979年</span>
+                          <span class="title" data-i18n="about.label.birthYear">出生年 :</span>
+                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block" data-i18n="about.value.birthYear">1979年</span>
                         </li>
 
                       </ul>
@@ -169,16 +177,16 @@
                     <div class="col-6">
                       <ul class="about-list list-unstyled open-sans-font">
                         <li>
-                          <span class="title">連絡電話 :</span>
-                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">0937655402</span>
+                          <span class="title" data-i18n="about.label.phone">連絡電話 :</span>
+                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block" data-i18n="about.value.phone">0937655402</span>
                         </li>
                         <li>
-                          <span class="title">Email :</span>
-                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">jflashblaze@yahoo.com.tw</span>
+                          <span class="title" data-i18n="about.label.email">Email :</span>
+                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block" data-i18n="about.value.email">jflashblaze@yahoo.com.tw</span>
                         </li>
                         <li>
-                          <span class="title">目前工作狀態 :</span>
-                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">在職中</span>
+                          <span class="title" data-i18n="about.label.status">目前工作狀態 :</span>
+                          <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block" data-i18n="about.value.status">在職中</span>
                         </li>                      
                       </ul>
                     </div>
@@ -197,14 +205,14 @@
                     <div class="col-6">
                       <div class="box-stats with-margin">
                         <h3 class="poppins-font position-relative">18</h3>
-                        <p class="open-sans-font m-0 position-relative text-uppercase">年以上 <span class="d-block">經驗</span>
+                        <p class="open-sans-font m-0 position-relative text-uppercase" data-i18n-html="about.stats.experience">年以上 <span class="d-block">經驗</span>
                         </p>
                       </div>
                     </div>
                     <div class="col-6">
                       <div class="box-stats with-margin">
                         <h3 class="poppins-font position-relative">30</h3>
-                        <p class="open-sans-font m-0 position-relative text-uppercase">以上完成 <span class="d-block">大型專案</span>
+                        <p class="open-sans-font m-0 position-relative text-uppercase" data-i18n-html="about.stats.projects">以上完成 <span class="d-block">大型專案</span>
                         </p>
                       </div>
                     </div>
@@ -230,7 +238,7 @@
               <!-- Skills Starts -->
               <div class="row">
                 <div class="col-12">
-                  <h3 class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">專業技能</h3>
+                  <h3 class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600" data-i18n="about.skills">專業技能</h3>
                 </div>
                 <div class="col-6 col-md-3 mb-3 mb-sm-5">
                   <div class="c100 p100">
@@ -318,7 +326,7 @@
               <!-- Experience & Education Starts -->
               <div class="row">
                 <div class="col-12">
-                  <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience <span>&</span> Education </h3>
+                  <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600" data-i18n-html="about.expEdu">Experience <span>&</span> Education </h3>
                 </div>
                 <div class="col-lg-6 m-15px-tb">
                   <div class="resume-box">
@@ -327,28 +335,28 @@
                         <div class="icon">
                           <i class="fa fa-briefcase"></i>
                         </div>
-                        <span class="time open-sans-font text-uppercase">2024 - 至今</span>
-                        <h5 class="poppins-font text-uppercase">UI/UX專案襄理 <span class="place open-sans-font">王品集團</span>
+                        <span class="time open-sans-font text-uppercase" data-i18n="about.job1.time">2024 - 至今</span>
+                        <h5 class="poppins-font text-uppercase" data-i18n-html="about.job1.title">UI/UX專案襄理 <span class="place open-sans-font">王品集團</span>
                         </h5>
-                        <p class="open-sans-font">負責協調跨部門資源，推動 UI/UX 設計專案從概念到落地，確保產品體驗符合使用者需求與商業目標。 </p>
+                        <p class="open-sans-font" data-i18n="about.job1.desc">負責協調跨部門資源，推動 UI/UX 設計專案從概念到落地，確保產品體驗符合使用者需求與商業目標。 </p>
                       </li>
                       <li>
                         <div class="icon">
                           <i class="fa fa-briefcase"></i>
                         </div>
-                        <span class="time open-sans-font text-uppercase">2018 - 2024</span>
-                        <h5 class="poppins-font text-uppercase">前端工程師 <span class="place open-sans-font">原誠科技有限公司</span>
+                        <span class="time open-sans-font text-uppercase" data-i18n="about.job2.time">2018 - 2024</span>
+                        <h5 class="poppins-font text-uppercase" data-i18n-html="about.job2.title">前端工程師 <span class="place open-sans-font">原誠科技有限公司</span>
                         </h5>
-                        <p class="open-sans-font">專注於使用 各式前端框架如Vue.js、Angular等 建構高效、模組化的前端介面，致力於提升用戶體驗與開發效能。</p>
+                        <p class="open-sans-font" data-i18n="about.job2.desc">專注於使用 各式前端框架如Vue.js、Angular等 建構高效、模組化的前端介面，致力於提升用戶體驗與開發效能。</p>
                       </li>
                       <li>
                         <div class="icon">
                           <i class="fa fa-briefcase"></i>
                         </div>
-                        <span class="time open-sans-font text-uppercase">2010 - 2018</span>
-                        <h5 class="poppins-font text-uppercase">網頁設計師 <span class="place open-sans-font">傑富科技資訊有限公司</span>
+                        <span class="time open-sans-font text-uppercase" data-i18n="about.job3.time">2010 - 2018</span>
+                        <h5 class="poppins-font text-uppercase" data-i18n-html="about.job3.title">網頁設計師 <span class="place open-sans-font">傑富科技資訊有限公司</span>
                         </h5>
-                        <p class="open-sans-font">結合視覺美感與使用者體驗，設計兼具品牌風格與功能性的網站介面。</p>
+                        <p class="open-sans-font" data-i18n="about.job3.desc">結合視覺美感與使用者體驗，設計兼具品牌風格與功能性的網站介面。</p>
                       </li>
                     </ul>
                   </div>
@@ -360,19 +368,19 @@
                         <div class="icon">
                           <i class="fa fa-graduation-cap"></i>
                         </div>
-                        <span class="time open-sans-font text-uppercase">2011/9 - 2014/6</span>
-                        <h5 class="poppins-font text-uppercase">多媒體設計研究所 <span class="place open-sans-font">台中科技大學</span>
+                        <span class="time open-sans-font text-uppercase" data-i18n="about.edu1.time">2011/9 - 2014/6</span>
+                        <h5 class="poppins-font text-uppercase" data-i18n-html="about.edu1.title">多媒體設計研究所 <span class="place open-sans-font">台中科技大學</span>
                         </h5>
-                        <p class="open-sans-font">主要專注在互動設計、使用者體驗與數位內容製作。研究期間除了學習視覺與動態設計相關技術，對 UI/UX 設計與前端開發有更深入的理解與興趣。</p>
+                        <p class="open-sans-font" data-i18n="about.edu1.desc">主要專注在互動設計、使用者體驗與數位內容製作。研究期間除了學習視覺與動態設計相關技術，對 UI/UX 設計與前端開發有更深入的理解與興趣。</p>
                       </li>
                       <li>
                         <div class="icon">
                           <i class="fa fa-graduation-cap"></i>
                         </div>
-                        <span class="time open-sans-font text-uppercase">1999/9 - 203/6</span>
-                        <h5 class="poppins-font text-uppercase">視覺傳達設計系 <span class="place open-sans-font">樹德科技大學</span>
+                        <span class="time open-sans-font text-uppercase" data-i18n="about.edu2.time">1999/9 - 2003/6</span>
+                        <h5 class="poppins-font text-uppercase" data-i18n-html="about.edu2.title">視覺傳達設計系 <span class="place open-sans-font">樹德科技大學</span>
                         </h5>
-                        <p class="open-sans-font">在學期間打下了扎實的設計基礎，從平面設計、品牌識別到包裝與排版都有涉獵。除了視覺美感的訓練，也接觸到一些數位媒體與簡易互動設計，讓我對 UI/UX 與前端設計產生濃厚興趣，成為後續進修與職涯轉向的起點。</p>
+                        <p class="open-sans-font" data-i18n="about.edu2.desc">在學期間打下了扎實的設計基礎，從平面設計、品牌識別到包裝與排版都有涉獵。除了視覺美感的訓練，也接觸到一些數位媒體與簡易互動設計，讓我對 UI/UX 與前端設計產生濃厚興趣，成為後續進修與職涯轉向的起點。</p>
                       </li>
                     </ul>
                   </div>
@@ -391,7 +399,7 @@
         <div class="portfolio">
           <!-- Page Title Starts -->
           <div class="title-section text-left text-sm-center">
-            <h2>專案 <span>作品</span>
+            <h2 data-i18n-html="portfolio.sectionTitle">專案 <span>作品</span>
             </h2>
             <span class="title-bg">works</span>
           </div>
@@ -406,7 +414,7 @@
                     <figure>
                       <img src="img/work-1.jpg" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>王品集團官網</span>
+                        <span data-i18n="proj.wowprime.name">王品集團官網</span>
                       </div>
                     </figure>
                   </li>
@@ -416,7 +424,7 @@
                     <figure>
                       <img src="img/work-2.jpg" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>王品瘋美食官網</span>
+                        <span data-i18n="proj.wowfms.name">王品瘋美食官網</span>
                       </div>
                     </figure>
                   </li>
@@ -426,7 +434,7 @@
                     <figure>
                       <img src="img/work-3.jpg" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>王品旗下品牌各官網</span>
+                        <span data-i18n="proj.brands.name">王品旗下品牌各官網</span>
                       </div>
                     </figure>
                   </li>
@@ -436,7 +444,7 @@
                     <figure>
                       <img src="img/work-8.jpg" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>7-11賣貨便UI介面設計</span>
+                        <span data-i18n="proj.myship.name">7-11賣貨便UI介面設計</span>
                       </div>
                     </figure>
                   </li>
@@ -447,7 +455,7 @@
                     <figure>
                       <img src="img/work-6.jpg" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>UI/UI專案</span>
+                        <span data-i18n="proj.uiux.name">UI/UI專案</span>
                       </div>
                     </figure>
                   </li>
@@ -456,7 +464,7 @@
                     <figure>
                       <img src="img/vic.png" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>vic線上娛樂城</span>
+                        <span data-i18n="proj.vic.name">vic線上娛樂城</span>
                       </div>
                     </figure>
                   </li>
@@ -464,7 +472,7 @@
                     <figure>
                       <img src="img/work-9.jpg" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>直播伴侶平台</span>
+                        <span data-i18n="proj.gotolive.name">直播伴侶平台</span>
                       </div>
                     </figure>
                   </li>
@@ -472,7 +480,7 @@
                     <figure>
                       <img src="img/work-4.jpg" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>NEO CYBER | Cyberpunk Gaming</span>
+                        <span data-i18n="proj.neo.name">NEO CYBER | Cyberpunk Gaming</span>
                       </div>
                     </figure>
                   </li>
@@ -480,7 +488,7 @@
                     <figure>
                       <img src="img/work-7.png" alt="Portolio Image" loading="lazy">
                       <div>
-                        <span>影視站前端開發</span>
+                        <span data-i18n="proj.movie.name">影視站前端開發</span>
                       </div>
                     </figure>
                   </li> -->
@@ -495,15 +503,15 @@
                     <figure>
                       <!-- Project Details Starts -->
                       <figcaption>
-                        <h3>王品集團官網</h3>
+                        <h3 data-i18n="proj.wowprime.title">王品集團官網</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
                               <a href="https://www.wowprime.com/zh-tw/" target="_blank">www.wowprime.com</a>
                             </span>
                           </div>
@@ -521,15 +529,15 @@
                     <figure>
                       <!-- Project Details Starts -->
                       <figcaption>
-                        <h3>王品瘋美食官網</h3>
+                        <h3 data-i18n="proj.wowfms.title">王品瘋美食官網</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
                               <a href="https://www.wowfms.com/" target="_blank">www.wowfms.com</a>
                             </span>
                           </div>
@@ -547,15 +555,15 @@
                     <figure>
                       <!-- Project Details Starts -->
                       <figcaption>
-                        <h3>王品旗下各品牌官網</h3>
+                        <h3 data-i18n="proj.brands.title">王品旗下各品牌官網</h3>
                         <div class="row open-sans-font">
                           <div class="col-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
+                            <span class="project-label" data-i18n="label.tech">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                           </div>
                           <div class="col-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
                               <a href="https://www.wowprime.com/zh-tw/business/strategy" target="_blank">www.wowprime.com</a>
                             </span>
                           </div>
@@ -642,22 +650,22 @@
                   <li>
                     <figure>
                       <figcaption>
-                        <h3>7-11賣貨便UI介面設計</h3>
+                        <h3 data-i18n="proj.myship.title">7-11賣貨便UI介面設計</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
                               <a href="https://myship.7-11.com.tw/" target="_blank">https://myship.7-11.com.tw/</a>
                             </span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-code pr-2"></i>
-                            <span class="project-label">檔案結構 </span>: <span class="ft-wt-600 uppercase">
-                              <a href="https://zeroheight.com/883f1c597/p/093c9c-" target="_blank">交付檔案歷史</a>
+                            <span class="project-label" data-i18n="label.files">檔案結構 </span>: <span class="ft-wt-600 uppercase">
+                              <a href="https://zeroheight.com/883f1c597/p/093c9c-" target="_blank" data-i18n="link.deliveryHistory">交付檔案歷史</a>
                             </span>
                           </div>
                         </div>
@@ -672,16 +680,16 @@
                     <figure>
                       <!-- Project Details Starts -->
                       <figcaption>
-                        <h3>UX/UI專案</h3>
+                        <h3 data-i18n="proj.uiux.title">UX/UI專案</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">Figma</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">Figma</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
-                              <a href="https://reurl.cc/qGXmdR" target="_blank">專案預覽</a>
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
+                              <a href="https://reurl.cc/qGXmdR" target="_blank" data-i18n="link.projectPreview">專案預覽</a>
                             </span>
                           </div>
                         </div>
@@ -697,21 +705,21 @@
                   <li>
                     <figure>
                       <figcaption>
-                        <h3>vic線上娛樂城前端開發</h3>
+                        <h3 data-i18n="proj.vic.title">vic線上娛樂城前端開發</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">Vue3, Vite, TailwindCSS</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">Vue3, Vite, TailwindCSS</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
-                              <a href=" https://testfront.vic999.vip" target="_blank">官網</a>
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
+                              <a href=" https://testfront.vic999.vip" target="_blank" data-i18n="link.officialSite">官網</a>
                             </span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-code pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
+                            <span class="project-label" data-i18n="label.source">Preview </span>: <span class="ft-wt-600 uppercase">
                               <a href="https://github.com/shanaerettact/vic" target="_blank">GitHub</a>
                             </span>
                           </div>
@@ -723,22 +731,22 @@
                   <li>
                     <figure>
                       <figcaption>
-                        <h3>直播伴侶平台</h3>
+                        <h3 data-i18n="proj.gotolive.title">直播伴侶平台</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">Vue3, Vite, TailwindCSS</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">Vue3, Vite, TailwindCSS</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
-                              <a href="https://gotolive.app/#/" target="_blank">官網</a>
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
+                              <a href="https://gotolive.app/#/" target="_blank" data-i18n="link.officialSite">官網</a>
                             </span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-code pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
-                              <a href="https://github.com/shanaerettact/gotolive target="_blank">GitHub</a>
+                            <span class="project-label" data-i18n="label.source">Preview </span>: <span class="ft-wt-600 uppercase">
+                              <a href="https://github.com/shanaerettact/gotolive" target="_blank">GitHub</a>
                             </span>
                           </div>
                         </div>
@@ -749,21 +757,21 @@
                   <li>
                     <figure>
                       <figcaption>
-                        <h3>NEO CYBER | Cyberpunk Gaming</h3>
+                        <h3 data-i18n="proj.neo.title">NEO CYBER | Cyberpunk Gaming</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">Vue3, Vite, TailwindCSS</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">Vue3, Vite, TailwindCSS</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-external-link pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
-                              <a href="https://cyber-neo.pro/index.html#/" target="_blank">官網</a>
+                            <span class="project-label" data-i18n="label.preview">Preview </span>: <span class="ft-wt-600 uppercase">
+                              <a href="https://cyber-neo.pro/index.html#/" target="_blank" data-i18n="link.officialSite">官網</a>
                             </span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-code pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
+                            <span class="project-label" data-i18n="label.source">Preview </span>: <span class="ft-wt-600 uppercase">
                               <a href="https://github.com/shanaerettact/japan-casino" target="_blank">GitHub</a>
                             </span>
                           </div>
@@ -775,15 +783,15 @@
                   <!-- <li>
                     <figure>
                       <figcaption>
-                        <h3>影視站前端開發</h3>
+                        <h3 data-i18n="proj.movie.title">影視站前端開發</h3>
                         <div class="row open-sans-font">
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-star pr-2"></i>
-                            <span class="project-label">技術 </span>: <span class="ft-wt-600 uppercase">Angular, TailwindCSS</span>
+                            <span class="project-label" data-i18n="label.tech">技術 </span>: <span class="ft-wt-600 uppercase">Angular, TailwindCSS</span>
                           </div>
                           <div class="col-12 col-sm-6 mb-2">
                             <i class="fa fa-code pr-2"></i>
-                            <span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase">
+                            <span class="project-label" data-i18n="label.source">Preview </span>: <span class="ft-wt-600 uppercase">
                               <a href="https://github.com/shanaerettact/movie" target="_blank">GitHub</a>
                             </span>
                           </div>
@@ -820,7 +828,7 @@
         <div class="blog">
           <!-- Page Title Starts -->
           <div class="title-section text-left text-sm-center">
-            <h2>線上 <span>課程</span>
+            <h2 data-i18n-html="blog.sectionTitle">線上 <span>課程</span>
             </h2>
             <span class="title-bg">posts</span>
           </div>
@@ -841,11 +849,11 @@
                     <div class="post-content">
                       <div class="entry-header">
                         <h3>
-                          <a href="https://hiskio.com/courses/135">給網頁設計初學者的一門課</a>
+                          <a data-i18n="course1.title" href="https://hiskio.com/courses/135">給網頁設計初學者的一門課</a>
                         </h3>
                       </div>
                       <div class="entry-content open-sans-font">
-                        <p>使用html+css，從零開始讓你成為網頁設計師的第一步 </p>
+                        <p data-i18n="course1.desc">使用html+css，從零開始讓你成為網頁設計師的第一步 </p>
                       </div>
                     </div>
                   </article>
@@ -862,11 +870,11 @@
                     <div class="post-content">
                       <div class="entry-header">
                         <h3>
-                          <a href="https://hiskio.com/courses/519" target="_blank">一次解決常見 CSS 排版問題</a>
+                          <a data-i18n="course2.title" href="https://hiskio.com/courses/519" target="_blank">一次解決常見 CSS 排版問題</a>
                         </h3>
                       </div>
                       <div class="entry-content open-sans-font">
-                        <p>float、position、flexbox、gridsystem怎麼懂? 網頁版面規劃總是做不好，跑版問題太難找，這堂課一次解決你的煩惱。</p>
+                        <p data-i18n="course2.desc">float、position、flexbox、gridsystem怎麼懂? 網頁版面規劃總是做不好，跑版問題太難找，這堂課一次解決你的煩惱。</p>
                       </div>
                     </div>
                   </article>
@@ -883,11 +891,11 @@
                     <div class="post-content">
                       <div class="entry-header">
                         <h3>
-                          <a href="https://hiskio.com/courses/154" target="_blank">前端新手開發攻略｜6 小時無痛入門 jQuery</a>
+                          <a data-i18n="course3.title" href="https://hiskio.com/courses/154" target="_blank">前端新手開發攻略｜6 小時無痛入門 jQuery</a>
                         </h3>
                       </div>
                       <div class="entry-content open-sans-font">
-                        <p>無 jQuery 基礎專用！詳細的基礎原理講解，搭配實例運用，讓您學習無障礙。 </p>
+                        <p data-i18n="course3.desc">無 jQuery 基礎專用！詳細的基礎原理講解，搭配實例運用，讓您學習無障礙。 </p>
                       </div>
                     </div>
                   </article>
@@ -934,5 +942,7 @@
 	<script src="js/popper.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/custom.js"></script>
+    <!-- Language / i18n -->
+    <script src="js/i18n.js"></script>
   </body>
 </html>

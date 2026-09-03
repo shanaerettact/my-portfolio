@@ -1,0 +1,76 @@
+/* =================================================================== */
+/* LANGUAGE SWITCHER
+====================================================================== */
+
+.lang-switch {
+  position: fixed;
+  z-index: 12;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 30px;
+  background: #252525;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+}
+
+.lang-switch .lang-switch__btn {
+  border: 0;
+  outline: 0;
+  padding: 0 15px;
+  height: 32px;
+  border-radius: 30px;
+  background: transparent;
+  color: #b5b5b5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.lang-switch .lang-switch__btn:hover {
+  color: #ffffff;
+}
+
+.lang-switch .lang-switch__btn.active {
+  color: #1a1a1a;
+  background-color: #ffb400;
+}
+
+/* Light skin */
+body.light .lang-switch {
+  background: #ffffff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+body.light .lang-switch .lang-switch__btn {
+  color: #767676;
+}
+
+body.light .lang-switch .lang-switch__btn:hover {
+  color: #111111;
+}
+
+/* Hide alongside the nav while the portfolio slideshow is open.
+   On desktop .hide-header already fades the whole header. */
+@media (max-width: 991px) {
+  .header.hide-header .lang-switch {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .lang-switch {
+    top: 30px;
+    right: 30px;
+    bottom: auto;
+    left: auto;
+  }
+}
